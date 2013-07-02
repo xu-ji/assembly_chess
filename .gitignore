@@ -1,0 +1,39 @@
+#This the the canonical lab .gitignore file
+
+#ignore temp files
+*~
+
+#ignore junk files from latex output
+*.out
+*.log
+*.aux
+*.dvi
+*.ps
+
+#ignore junk files from compiling C code
+*.o
+dcd_gen
+
+#ignore junk files from Eclipse projects
+.cproject
+.project
+.settings
+
+#ignore junk files from compiling Haskell code
+*.hi
+
+#ignore junk files from compiling Java code
+*.class
+
+#ignore other junk files
+*.backup
+*.kate-swp
+*.swp
+*.snm
+*.vrb
+*.nav
+*.toc
+
+#ignore kernel file
+kernel.img
+
