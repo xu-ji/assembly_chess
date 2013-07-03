@@ -1,9 +1,9 @@
 .SUFFIXES:
-ARCH := $(shell uname -m | sed -e s/i.86/i386/ -e s/arm.*/arm/ -e s/sa110/arm/)
-ifeq ($(ARCH), i386)
-	AS = ./assemble_x86
-else
+ARCH := $(shell uname -m | sed -e s/.*86.*/x86/ -e s/arm.*/arm/ -e s/sa110/arm/)
+ifeq ($(ARCH), arm)
 	AS = ./assemble_arm
+else
+	AS = ./assemble_x86
 endif
 KERNEL = kernel.img
 
