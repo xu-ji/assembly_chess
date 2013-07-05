@@ -32,8 +32,8 @@ connected to the Pi using a HDMI cable, and six momentary push buttons wired up
 to the GPIO pins of the Pi in the following fashion:
 
 GPIO18 = left
-GPIO23 = up
 GPIO4 = down
+GPIO23 = up
 GPIO17 = right
 GPIO22 = select
 GPIO27 = reset (restarts the game) 
@@ -41,3 +41,10 @@ GPIO27 = reset (restarts the game)
 For this setup we also used a breadboard, 6 10K Ohm resistors, 6 1K Ohm resistors 
 and several male-female and male-male jumper wires.
   
+Ideally you will have either an x86 or Pi to assemble the chess game on. If you 
+take a look at the Makefile inside the programs directory, you can see that we 
+only detect x86 and ARM architectures. We'd like to make our assembler source 
+code public to get rid of these compatibility issues, but that would be unfair 
+on next year's first years if they get the same assignment. So for now only the 
+ARM and Intel binary for the assembler is on here. 
+
